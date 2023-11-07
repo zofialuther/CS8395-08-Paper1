@@ -259,7 +259,7 @@ def run_tests(solution_path, tests):
             actual_output = func_to_test(input_data)
             passed = actual_output == expected_output
         except Exception as e:
-            print(f"Function raised an exception: {e}")
+            # print(f"Function raised an exception: {e}")
             actual_output = None
 
         # with concurrent.futures.ThreadPoolExecutor() as executor:
