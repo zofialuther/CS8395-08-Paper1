@@ -1,0 +1,26 @@
+
+
+//Pseudocode:
+
+//Function myAtoi takes in one parameter, a string 's'
+
+//Check if 's' is null or empty
+  //If so, return 0
+//Trim 's'
+//Set a sign variable to 1
+//Set an index variable to 0
+//Set a total variable to 0
+//Check if 's' at index 0 is '+' or '-'
+  //If so, set sign variable to 1 or -1 accordingly
+  //Increment index by 1
+//Repeat while index is less than length of 's'
+  //Set a digit variable to 's' at index - '0'
+  //Check if digit is less than 0 or greater than 9
+    //If so, break out of loop
+  //Check if total is greater than Integer.MAX_VALUE / 10
+    //OR
+    //If total is equal to Integer.MAX_VALUE / 10 and digit is greater than Integer.MAX_VALUE % 10
+      //If so, return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE
+  //Set total to 10 * total + digit
+  //Increment index by 1
+//Return total * sign

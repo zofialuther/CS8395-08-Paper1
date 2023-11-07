@@ -1,0 +1,13 @@
+
+
+SET currentConsecutive to 0
+SET maxConsecutive to 0 
+
+FOR each number in nums
+    IF num is equal to 1 
+        Increment currentConsecutive by 1
+        Set maxConsecutive to the max between maxConsecutive and currentConsecutive
+    ELSE 
+        Set currentConsecutive to 0 
+
+RETURN maxConsecutive

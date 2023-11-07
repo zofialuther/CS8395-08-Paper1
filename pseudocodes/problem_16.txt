@@ -1,0 +1,27 @@
+
+
+Pseudocode:
+
+START
+
+// Create a list to store duplicates 
+List<Integer> duplicates 
+
+// Iterate through nums array 
+FOR int num in nums 
+	// Get the index of the element in the array 
+	int index = Math.abs(num) - 1
+	
+	// If the element at that index is negative, add it to the duplicates list
+	IF nums[index] < 0 
+		duplicates.add(Math.abs(num))
+	END IF
+	
+	// Set the element at index to negative 
+	nums[index] = -nums[index]
+END FOR
+
+// Return duplicates list 
+RETURN duplicates
+
+END

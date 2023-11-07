@@ -1,0 +1,35 @@
+{
+    "problem_index": 20,
+    "java_code": "public boolean isAnagram(String s, String t) {\\n    if (s.length() != t.length()) {\\n        return false;\\n    }\\n    int[] counter = new int[26];\\n    for (int i = 0; i < s.length(); i++) {\\n        counter[s.charAt(i) - 'a']++;\\n        counter[t.charAt(i) - 'a']--;\\n    }\\n    for (int count : counter) {\\n        if (count != 0) {\\n            return false;\\n        }\\n    }\\n    return true;\\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        },
+        {
+            "name": "t",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": {
+                "s": "anagram",
+                "t": "nagaram"
+            },
+            "output": "true"
+        },
+        {
+            "input": {
+                "s": "rat",
+                "t": "car"
+            },
+            "output": "false"
+        }
+    ]
+}

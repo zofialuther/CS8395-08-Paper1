@@ -1,0 +1,3 @@
+
+
+This program takes an integer n as an input parameter and returns a list of strings. It creates an empty list of strings and iterates through the numbers from 1 to n. If the number is a multiple of both 3 and 5, it adds "FizzBuzz" to the list. If the number is a multiple of 3 only, it adds "Fizz" to the list. If the number is a multiple of 5 only, it adds "Buzz" to the list. If the number is not a multiple of either 3 or 5, it adds the number as a string to the list. Finally, it returns the list of strings.

@@ -1,0 +1,37 @@
+{
+    "problem_index": 30,
+    "java_code": "public boolean canJump(int[] nums) {\\n    int lastGoodIndex = nums.length - 1;\\n    for (int i = nums.length - 1; i >= 0; i--) {\\n        if (i + nums[i] >= lastGoodIndex) {\\n            lastGoodIndex = i;\\n        }\\n    }\\n    return lastGoodIndex == 0;\\n}",
+    "parameters": [
+        {
+            "name": "nums",
+            "type": "int[]"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": [
+                2,
+                3,
+                1,
+                1,
+                4
+            ],
+            "output": true
+        },
+        {
+            "input": [
+                3,
+                2,
+                1,
+                0,
+                4
+            ],
+            "output": false
+        }
+    ]
+}

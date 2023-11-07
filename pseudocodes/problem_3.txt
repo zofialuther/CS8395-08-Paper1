@@ -1,0 +1,15 @@
+
+
+Create a Stack of characters
+
+FOR each character c in the string s
+  IF c is equal to '('
+    Push c into the stack
+  ELSE IF c is equal to ')'
+    IF the stack is empty OR the character popped from the stack is not '('
+      RETURN false
+    END IF
+  END IF
+END FOR
+
+RETURN whether or not the stack is empty

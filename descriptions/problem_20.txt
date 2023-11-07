@@ -1,0 +1,3 @@
+
+
+This program checks if two strings, `s` and `t`, are anagrams of each other. It does this by comparing the length of the strings, and if they are not the same length, it returns `false`. Otherwise, it creates an array of length 26 to keep track of the characters in each string, and then iterates through the characters of the strings, incrementing the count of the characters of `s` and decrementing the count of the characters of `t`. Finally, if the counts for each character is 0, it returns `true`, indicating the strings are anagrams. If any count is not 0, it returns `false`.

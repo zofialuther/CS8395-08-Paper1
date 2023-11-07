@@ -1,0 +1,12 @@
+
+
+Create a stack to store characters  
+FOR each character in the string s  
+  IF the character is an opening bracket  
+    Push the character to the stack  
+  ELSE  
+    IF the stack is empty, return false  
+    IF the character is a closing bracket and does not match the character at the top of the stack, return false  
+    Pop the character from the stack  
+END FOR  
+Return true if the stack is empty, otherwise, return false

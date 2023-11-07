@@ -1,0 +1,29 @@
+{
+    "problem_index": 24,
+    "java_code": "public int firstUniqChar(String s) {\\n    int[] frequency = new int[26];\\n    for (int i = 0; i < s.length(); i++) {\\n        frequency[s.charAt(i) - 'a']++;\\n    }\\n    for (int i = 0; i < s.length(); i++) {\\n        if (frequency[s.charAt(i) - 'a'] == 1) {\\n            return i;\\n        }\\n    }\\n    return -1;\\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": "leetcode",
+            "output": 0
+        },
+        {
+            "input": "loveleetcode",
+            "output": 2
+        },
+        {
+            "input": "aabb",
+            "output": -1
+        }
+    ]
+}

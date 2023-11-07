@@ -1,0 +1,33 @@
+{
+    "problem_index": 27,
+    "java_code": "public int myAtoi(String s) {\\n    if (s == null || s.length() == 0)\\n        return 0;\\n    s = s.trim();\\n    int sign = 1, index = 0, total = 0;\\n    if (s.charAt(0) == '+' || s.charAt(0) == '-') {\\n        sign = s.charAt(0) == '+' ? 1 : -1;\\n        index++;\\n    }\\n    while (index < s.length()) {\\n        int digit = s.charAt(index) - '0';\\n        if (digit < 0 || digit > 9) break;\\n        if (total > Integer.MAX_VALUE / 10 ||\\n            (total == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10))\\n            return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;\\n        total = 10 * total + digit;\\n        index++;\\n    }\\n    return total * sign;\\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": "42",
+            "output": 42
+        },
+        {
+            "input": "   -42",
+            "output": -42
+        },
+        {
+            "input": "4193 with words",
+            "output": 4193
+        },
+        {
+            "input": "words and 987",
+            "output": 0
+        }
+    ]
+}

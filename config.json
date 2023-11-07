@@ -1,0 +1,5 @@
+{
+    "name": "intermediate-representations",
+    "model": "openai-latest-1024",
+    "run_test": "python3 main.py"
+}

@@ -1,0 +1,23 @@
+
+
+// Pseudocode
+// GCD function will take an int array of numbers as a parameter
+
+FUNCTION gcd(numbers)
+  // Create variables to store the two numbers
+  SET a = numbers[0]
+  SET b = numbers[1]
+  
+  // Start a loop that will continue while b is not equal to 0
+  WHILE b != 0
+    // Store the value of b in a temp variable
+    SET temp = b
+    // Calculate the remainder of a divided by b and store in b
+    SET b = a % b
+    // Store the value of temp in a
+    SET a = temp
+  END WHILE
+
+  // Return a as the greatest common divisor
+  RETURN a
+END FUNCTION

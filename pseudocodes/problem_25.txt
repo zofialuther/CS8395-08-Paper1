@@ -1,0 +1,16 @@
+
+
+
+Create an empty List to store the result
+
+Loop from 1 to n
+  If the current number is divisible by 3 and 5
+    Add "FizzBuzz" to the result List
+  Else if the current number is divisible by 3
+    Add "Fizz" to the result List
+  Else if the current number is divisible by 5
+    Add "Buzz" to the result List
+  Else
+    Add the current number as a string to the result List
+
+Return the result List

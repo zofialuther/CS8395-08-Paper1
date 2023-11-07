@@ -1,0 +1,3 @@
+
+
+This program takes an array of integers (nums) as a parameter and returns an integer value. It iterates over the array to find the maximum consecutive 1s in the array and returns that value. It stores the current consecutive 1s in a variable currentConsecutive and keeps track of the maximum consecutive 1s in a variable maxConsecutive. It updates the maxConsecutive value when a new maximum consecutive 1s is found. In the end it returns the maximum consecutive 1s.

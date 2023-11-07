@@ -1,0 +1,3 @@
+
+
+This program takes in a String as a parameter and returns a boolean value. It uses a stack to track the open parentheses, curly braces, and square brackets of the given String. For each character in the String, if it is an open symbol, it gets pushed onto the stack. If it is a closing symbol, the program checks if the stack is empty, which would mean there is no open symbol to match the closing symbol. It also checks if the top of the stack has the corresponding open symbol for the current closing symbol. If all of these conditions are met, the open symbol is popped off the stack. Finally, the program checks if the stack is empty, which would mean the parentheses, curly braces, and square brackets of the given String are all valid.

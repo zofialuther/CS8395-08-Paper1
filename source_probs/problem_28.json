@@ -1,0 +1,29 @@
+{
+    "problem_index": 28,
+    "java_code": "public int lengthOfLongestSubstring(String s) {\\n    int n = s.length(), ans = 0;\\n    Map<Character, Integer> map = new HashMap<>();\\n    for (int end = 0, start = 0; end < n; end++) {\\n        char alpha = s.charAt(end);\\n        if (map.containsKey(alpha)) {\\n            start = Math.max(map.get(alpha), start);\\n        }\\n        ans = Math.max(ans, end - start + 1);\\n        map.put(s.charAt(end), end + 1);\\n    }\\n    return ans;\\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": "abcabcbb",
+            "output": 3
+        },
+        {
+            "input": "bbbbb",
+            "output": 1
+        },
+        {
+            "input": "pwwkew",
+            "output": 3
+        }
+    ]
+}

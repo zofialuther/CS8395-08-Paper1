@@ -1,0 +1,7 @@
+
+
+This program is designed to take in a string of numbers and convert it to an integer. It will first check if the string is null or empty, and if so, it will return 0. The program will then trim the string of any leading or trailing spaces. It then assigns a sign value to the string and sets the index to 0. 
+
+The loop will then iterate through the string starting at the index and check if the character is a digit. If so, it will add the digit to the total and increment the index. If not, the loop will break. 
+
+Once the loop is complete, the program will return the total multiplied by the sign.

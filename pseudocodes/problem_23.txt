@@ -1,0 +1,16 @@
+
+
+Pseudocode:
+
+# Define function merge() with parameter intervals (2D array of integers)
+  # Check if length of intervals is less than or equal to 1
+    # IF true, return intervals
+    # ELSE, sort intervals based on first element of each interval
+  # Create a list of integers to store result
+  # Create newInterval array and assign first interval of intervals to it
+  # Add newInterval to result
+  # Iterate through intervals
+    # Check if first element of interval is less than or equal to last element of newInterval
+      # IF true, update last element of newInterval to largest of the two
+    # ELSE, assign interval to newInterval and add it to result
+  # Return result as 2D array of integers

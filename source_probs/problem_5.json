@@ -1,0 +1,49 @@
+{
+    "problem_index": 5,
+    "java_code": "public String[] customSort(String[] strs) {\n    Arrays.sort(strs, (a, b) -> {\n        int numA = Integer.parseInt(a);\n        int numB = Integer.parseInt(b);\n        if (numA == numB) return a.compareTo(b);\n        return numA - numB;\n    });\n    return strs;\n}",
+    "parameters": [
+        {
+            "name": "strs",
+            "type": "String[]"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "String[]"
+        }
+    ],
+    "tests": [
+        {
+            "input": [],
+            "output": []
+        },
+        {
+            "input": ["5"],
+            "output": ["5"]
+        },
+        {
+            "input": ["10", "2", "20", "02"],
+            "output": ["02", "2", "10", "20"]
+        },
+        {
+            "input": ["09", "9", "008", "8"],
+            "output": ["008", "8", "09", "9"]
+        },
+        {
+            "input": ["123", "0123", "45", "045"],
+            "output": ["0123", "123", "045", "45"]
+        },
+        {
+            "input": ["001", "01", "1", "0001"],
+            "output": ["0001", "001", "01", "1"]
+        },
+        {
+            "input": ["50", "500", "5", "005"],
+            "output": ["005", "5", "50", "500"]
+        },
+        {
+            "input": ["100", "1000", "0100"],
+            "output": ["0100", "100", "1000"]
+        }
+    ]
+}

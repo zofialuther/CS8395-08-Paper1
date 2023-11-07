@@ -1,0 +1,25 @@
+
+
+// Pseudocode
+
+// declare a function maxSubArraySum that takes in a parameter nums
+FUNCTION maxSubArraySum(nums) 
+  // check if the length of nums is 0
+  IF nums.length == 0 
+    // return 0
+    RETURN 0 
+  END IF 
+  // declare a variable maxSoFar and set it to the first element in nums 
+  SET maxSoFar = nums[0]
+  // declare a variable currentMax and set it to the first element in nums
+  SET currentMax = nums[0] 
+  // loop through the elements of nums
+  FOR i = 1 to nums.length 
+    // set currentMax to the max of the current element and the sum of the current element and the currentMax
+    SET currentMax = MAX(nums[i], currentMax + nums[i])
+    // set maxSoFar to the max of maxSoFar and currentMax
+    SET maxSoFar = MAX(maxSoFar, currentMax)
+  END FOR 
+  // return maxSoFar
+  RETURN maxSoFar
+END FUNCTION

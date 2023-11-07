@@ -1,0 +1,35 @@
+{
+    "problem_index": 19,
+    "java_code": "public String addStrings(String num1, String num2) {\\n    StringBuilder sb = new StringBuilder();\\n    int carry = 0;\\n    int i = num1.length() - 1;\\n    int j = num2.length() - 1;\\n    while (i >= 0 || j >= 0 or carry == 1) {\\n        int x = i < 0 ? 0 : num1.charAt(i--) - '0';\\n        int y = j < 0 ? 0 : num2.charAt(j--) - '0';\\n        sb.append((x + y + carry) % 10);\\n        carry = (x + y + carry) / 10;\\n    }\\n    return sb.reverse().toString();\\n}",
+    "parameters": [
+        {
+            "name": "num1",
+            "type": "String"
+        },
+        {
+            "name": "num2",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "String"
+        }
+    ],
+    "tests": [
+        {
+            "input": {
+                "num1": "11",
+                "num2": "123"
+            },
+            "output": "134"
+        },
+        {
+            "input": {
+                "num1": "456",
+                "num2": "77"
+            },
+            "output": "533"
+        }
+    ]
+}

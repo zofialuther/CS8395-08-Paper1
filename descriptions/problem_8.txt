@@ -1,0 +1,3 @@
+
+
+This program takes in an integer, 'x', as a parameter and returns the integer with its digits reversed. If the reversed number is larger than the maximum value of an integer, the program will return 0.

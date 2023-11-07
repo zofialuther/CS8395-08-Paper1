@@ -1,0 +1,27 @@
+
+
+
+//declare a variable "charCounts" of type Map 
+charCounts <- new HashMap 
+
+//declare a variable "count" of type Integer 
+count <- -1
+
+//Loop through the characters in the String "s" 
+FOR each character c in s.toCharArray() 
+    //add the character and its count to the Map 
+    charCounts.put(c, charCounts.getOrDefault(c, 0) + 1)
+
+//Loop through the values in the Map 
+FOR each int c in charCounts.values() 
+    //if the count is -1
+    IF count = -1 
+        //set the count to the current value
+        count <- c 
+    //else if the count is not equal to the current value
+    ELSE IF count != c 
+        //return false
+        RETURN false
+
+//return true
+RETURN true

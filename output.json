@@ -1,0 +1,28 @@
+{
+    "output": 0.7936507936507936,
+    "\ndirect_translations:": {
+        "total_passed_tests": "100",
+        "total_tests": "126",
+        "accuracy": "0.7936507936507936"
+    },
+    "\npseudocode_to_python:": {
+        "total_passed_tests": "92",
+        "total_tests": "126",
+        "accuracy": "0.7301587301587301"
+    },
+    "\ndescription_to_python:": {
+        "total_passed_tests": "96",
+        "total_tests": "126",
+        "accuracy": "0.7619047619047619"
+    },
+    "\npseudo_and_code_to_python:": {
+        "total_passed_tests": "99",
+        "total_tests": "126",
+        "accuracy": "0.7857142857142857"
+    },
+    "\ndesc_and_code_to_python:": {
+        "total_passed_tests": "100",
+        "total_tests": "126",
+        "accuracy": "0.7936507936507936"
+    }
+}

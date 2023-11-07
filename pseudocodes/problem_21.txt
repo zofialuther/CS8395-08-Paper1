@@ -1,0 +1,21 @@
+
+
+SET i to m - 1
+SET j to n - 1
+SET k to m + n - 1
+
+WHILE i is greater than or equal to 0 AND j is greater than or equal to 0
+  IF nums1[i] is greater than nums2[j]
+    SET nums1[k] to nums1[i]
+    DECREMENT i
+  ELSE
+    SET nums1[k] to nums2[j]
+    DECREMENT j
+  DECREMENT k
+END WHILE
+
+WHILE j is greater than or equal to 0
+  SET nums1[k] to nums2[j]
+  DECREMENT j
+  DECREMENT k
+END WHILE

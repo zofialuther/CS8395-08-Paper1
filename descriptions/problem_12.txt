@@ -1,0 +1,3 @@
+
+
+This program takes in an array of integers as a parameter and returns a single integer. It does this by looping through each number in the array and performing a bitwise XOR operation with each number. The XOR operation will keep the single number that does not appear twice in the array and remove all other numbers. The single number is then returned as the return value.

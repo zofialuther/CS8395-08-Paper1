@@ -1,0 +1,2 @@
+
+This program takes two strings (num1 and num2) as parameters and adds them together. It then uses a StringBuilder object to store the result of the addition, and returns a reversed string of the result. The program iterates over the num1 and num2 strings from right to left, adding each character of the string together. It keeps track of the carry from the addition and returns the reversed string of the result.

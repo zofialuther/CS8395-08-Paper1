@@ -1,0 +1,8 @@
+
+
+This program defines a function called `isPrime()` which takes a single integer parameter, `n`. The function will check if the `n` is a prime number using the following algorithm: 
+1. If `n` is less than or equal to 1, the function will return `false` (not a prime number). 
+2. If `n` is less than or equal to 3, the function will return `true`.
+3. If `n` is divisible by 2 or 3, the function will return `false`.
+4. A loop will check if `n` is divisible by any numbers between 5 and the square root of `n`, and if so will return `false`.
+5. If all of the above conditions fail, the function will return `true`.

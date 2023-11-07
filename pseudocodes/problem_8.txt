@@ -1,0 +1,10 @@
+
+
+- Set reversed to 0
+- While x does not equal 0
+  - Set reversed to reversed * 10 + x modulo 10
+  - Set x to x divided by 10
+- If reversed is less than Integer.MIN_VALUE or reversed is greater than Integer.MAX_VALUE
+  - Return 0
+- Else
+  - Return reversed as an integer

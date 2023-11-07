@@ -1,0 +1,57 @@
+{
+    "problem_index": 4,
+    "java_code": "public boolean isPrime(int n) {\n    if (n <= 1) return false;\n    if (n <= 3) return true;\n    if (n % 2 == 0 || n % 3 == 0) return false;\n    int i = 5;\n    while (i * i <= n) {\n        if (n % i == 0 || n % (i + 2) == 0) return false;\n        i += 6;\n    }\n    return true;\n}",
+    "parameters": [
+        {
+            "name": "n",
+            "type": "int"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": 0,
+            "output": false
+        },
+        {
+            "input": 1,
+            "output": false
+        },
+        {
+            "input": 2,
+            "output": true
+        },
+        {
+            "input": 3,
+            "output": true
+        },
+        {
+            "input": 4,
+            "output": false
+        },
+        {
+            "input": 17,
+            "output": true
+        },
+        {
+            "input": 18,
+            "output": false
+        },
+        {
+            "input": 97,
+            "output": true
+        },
+        {
+            "input": 99,
+            "output": false
+        },
+        {
+            "input": 104729,  
+            "output": true
+        }
+    ]
+}

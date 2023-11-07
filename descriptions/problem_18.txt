@@ -1,0 +1,3 @@
+
+
+This program takes an array of integers (`nums`) and an integer (`k`) as parameters and does not return any values. It rotates the elements in the array by shifting them to the right by `k` places, wrapping around the end of the array if necessary. The `reverse` method is used to accomplish this. It swaps the elements at the start and end indices of the array, and then increments the start and decrements the end indices until they meet at the center.

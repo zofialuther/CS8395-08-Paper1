@@ -1,0 +1,8 @@
+
+
+Create an empty set to store characters 
+Create a loop to iterate through the characters of the string 
+Within the loop, check if the set contains the current character 
+  - If true, return false 
+  - If false, add the current character to the set 
+After looping through all characters, return true

@@ -1,0 +1,3 @@
+
+
+This program checks if a given string contains only unique characters. It takes in one parameter of type String, and returns a boolean value. It uses a Set to store the characters in the string, and iterates through the characters in the string. If the set already contains the character, the program returns false. Otherwise, the character is added to the set and the program returns true.

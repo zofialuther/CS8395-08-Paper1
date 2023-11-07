@@ -1,0 +1,17 @@
+
+
+// Set i, j and k to 0
+// Sort the array nums1
+// Sort the array nums2
+// WHILE i is less than the length of nums1 AND j is less than the length of nums2
+    // IF nums1[i] is less than nums2[j]
+        // Increment i
+    // ELSE IF nums1[i] is greater than nums2[j]
+        // Increment j
+    // ELSE
+        // Set nums1[k] to nums1[i]
+        // Increment i
+        // Increment j
+        // Increment k
+// END WHILE
+// Return a copy of nums1 from index 0 to index k

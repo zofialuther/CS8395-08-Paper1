@@ -1,0 +1,3 @@
+ 
+
+This program takes in an array of integers as a parameter and returns the largest sum of the number of values from adjacent keys in a HashMap. It iterates through the array, adding each value to the HashMap and increasing the count for each value stored in the HashMap. It then iterates through the keys of the HashMap and if the adjacent key exists, it updates the result to the maximum of the current result and the sum of the number of values from the two adjacent keys. Finally, it returns the result.

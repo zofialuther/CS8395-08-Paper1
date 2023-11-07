@@ -1,0 +1,15 @@
+
+
+// Pseudocode 
+
+// Declare a variable 'single' and set it to 0
+single <- 0
+
+// Iterate through nums array
+FOR num in nums 
+    // bitwise XOR single with num
+    single <- single XOR num 
+END FOR
+
+// Return single
+RETURN single

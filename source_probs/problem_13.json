@@ -1,0 +1,39 @@
+{
+    "problem_index": 13,
+    "java_code": "public int findMaxConsecutiveOnes(int[] nums) {\n    int maxConsecutive = 0, currentConsecutive = 0;\n    for (int num : nums) {\n        if (num == 1) {\n            currentConsecutive++;\n            maxConsecutive = Math.max(maxConsecutive, currentConsecutive);\n        } else {\n            currentConsecutive = 0;\n        }\n    }\n    return maxConsecutive;\n}",
+    "parameters": [
+        {
+            "name": "nums",
+            "type": "int[]"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+            ],
+            "output": 3
+        },
+        {
+            "input": [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+            ],
+            "output": 2
+        }
+    ]
+}

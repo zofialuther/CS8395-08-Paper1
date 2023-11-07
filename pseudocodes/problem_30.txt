@@ -1,0 +1,16 @@
+
+
+Pseudocode:
+
+SET lastGoodIndex to the length of nums minus 1
+
+FOR i = the length of nums minus 1 to 0
+  IF i plus the value of nums at index i is greater than or equal to lastGoodIndex
+    SET lastGoodIndex to i
+END FOR
+
+IF lastGoodIndex is equal to 0
+  RETURN true
+ELSE
+  RETURN false
+END IF

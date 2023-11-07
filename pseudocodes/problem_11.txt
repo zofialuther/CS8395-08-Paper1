@@ -1,0 +1,22 @@
+
+
+START 
+
+FUNCTION fib(N)
+  IF N <= 1
+    RETURN N
+  END IF
+
+  SET a = 0 
+  SET b = 1
+  WHILE N > 1 
+    SET sum = a + b
+    SET a = b
+    SET b = sum
+    DECREMENT N
+  END WHILE
+
+  RETURN b 
+END FUNCTION 
+
+END

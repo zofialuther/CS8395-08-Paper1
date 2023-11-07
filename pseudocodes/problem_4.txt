@@ -1,0 +1,27 @@
+
+
+Pseudocode:
+
+START 
+
+FUNCTION isPrime(n)
+  IF n <= 1
+    RETURN false
+  END IF
+  IF n <= 3
+    RETURN true
+  END IF
+  IF n % 2 == 0 OR n % 3 == 0
+    RETURN false
+  END IF
+  SET i = 5
+  WHILE i * i <= n
+    IF n % i == 0 OR n % (i + 2) == 0
+      RETURN false
+    END IF
+    ADD 6 to i
+  END WHILE
+  RETURN true
+END FUNCTION
+
+END

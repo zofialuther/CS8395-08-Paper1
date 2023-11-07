@@ -1,0 +1,20 @@
+
+
+Pseudocode: 
+
+FUNCTION isValid(s: String): boolean
+    declare stack as new Stack of Characters
+    FOR each character c in s 
+        IF c is '(' OR c is '{' OR c is '['
+            push c onto stack
+        ELSE IF c is ')' AND stack is not empty AND top of stack is '('
+            pop top of stack 
+        ELSE IF c is '}' AND stack is not empty AND top of stack is '{'
+            pop top of stack
+        ELSE IF c is ']' AND stack is not empty AND top of stack is '['
+            pop top of stack
+        ELSE 
+            return false
+    END FOR 
+    RETURN if stack is empty 
+END FUNCTION

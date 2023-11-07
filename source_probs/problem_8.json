@@ -1,0 +1,33 @@
+{
+    "problem_index": 8,
+    "java_code": "\\npublic int reverse(int x) {\\n    long reversed = 0;\\n    while (x != 0) {\\n        reversed = reversed * 10 + x % 10;\\n        x = x / 10;\\n    }\\n    if (reversed < Integer.MIN_VALUE || reversed > Integer.MAX_VALUE) {\\n        return 0;\\n    } else {\\n        return (int) reversed;\\n    }\\n}\\n",
+    "parameters": [
+        {
+            "name": "x",
+            "type": "int"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": 123,
+            "output": 321
+        },
+        {
+            "input": -123,
+            "output": -321
+        },
+        {
+            "input": 120,
+            "output": 21
+        },
+        {
+            "input": 1534236469,
+            "output": 0
+        }
+    ]
+}

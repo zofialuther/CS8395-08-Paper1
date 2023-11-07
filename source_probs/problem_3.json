@@ -1,0 +1,69 @@
+{
+    "problem_index": 3,
+    "java_code": "public boolean isBalanced(String s) {\n    Stack<Character> stack = new Stack<>();\n    for (char c : s.toCharArray()) {\n        if (c == '(') {\n            stack.push(c);\n        } else if (c == ')') {\n            if (stack.isEmpty() || stack.pop() != '(') {\n                return false;\n            }\n        }\n    }\n    return stack.isEmpty();\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": "",
+            "output": true
+        },
+        {
+            "input": "()",
+            "output": true
+        },
+        {
+            "input": "[]",
+            "output": true
+        },
+        {
+            "input": "(]",
+            "output": false
+        },
+        {
+            "input": "([)]",
+            "output": false
+        },
+        {
+            "input": "{[]}",
+            "output": true
+        },
+        {
+            "input": "((()))",
+            "output": true
+        },
+        {
+            "input": "(()(()))",
+            "output": true
+        },
+        {
+            "input": "((())",
+            "output": false
+        },
+        {
+            "input": "Hello (world)!",
+            "output": true
+        },
+        {
+            "input": "A quick (brown (fox)) jumps over",
+            "output": true
+        },
+        {
+            "input": "A quick (brown (fox) jumps over",
+            "output": false
+        },
+        {
+            "input": "())(())(",
+            "output": false
+        }
+    ]
+}

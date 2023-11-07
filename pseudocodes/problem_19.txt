@@ -1,0 +1,37 @@
+
+
+Pseudocode:
+
+// Initialize the variables needed for the problem
+StringBuilder sb 
+int carry
+int i 
+int j 
+
+// Set i and j equal to the length of num1 and num2, respectively
+i ← num1.length - 1
+j ← num2.length - 1
+
+// Check if either i or j is greater than 0, or if carry is equal to 1
+WHILE i ≥ 0 OR j ≥ 0 OR carry = 1 
+  // Set x and y equal to 0 if i or j are less than 0, otherwise set them equal to the character at the index i or j for num1 and num2
+  IF i < 0 
+    x ← 0 
+  ELSE 
+    x ← num1.charAt(i--) - '0' 
+  END IF 
+  IF j < 0 
+    y ← 0 
+  ELSE 
+    y ← num2.charAt(j--) - '0' 
+  END IF 
+
+  // Append the remainder of (x + y + carry) when divided by 10 to sb 
+  sb.append((x + y + carry) % 10)
+
+  // Set carry equal to (x + y + carry) divided by 10 
+  carry ← (x + y + carry) / 10 
+END WHILE 
+
+// Reverse and return the string from sb 
+RETURN sb.reverse().toString()

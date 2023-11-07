@@ -1,0 +1,17 @@
+
+
+Pseudocode:
+
+FUNCTION isPalindrome(s)
+    SET s = lowercase of s, and remove all non-alphanumeric characters
+    SET i = 0
+    SET j = length of s - 1
+    WHILE i < j
+        IF s at position i does not equal s at position j
+            RETURN false
+        END IF
+        INCREMENT i
+        DECREMENT j
+    END WHILE
+    RETURN true
+END FUNCTION

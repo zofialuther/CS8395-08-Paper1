@@ -1,0 +1,26 @@
+
+
+//pseudocode
+
+//declare variables
+int i = m - 1
+int j = n - 1
+int k = m + n - 1
+
+//loop while j is greater than or equal to 0
+WHILE j >= 0
+    //check if i is greater than or equal to 0 and nums1 at index i is greater than nums2 at index j
+    IF i >= 0 AND nums1[i] > nums2[j]
+        //set nums1 at index k to nums1 at index i
+        nums1[k] = nums1[i]
+        //decrement k and i
+        k--
+        i--
+    ELSE
+        //set nums1 at index k to nums2 at index j
+        nums1[k] = nums2[j]
+        //decrement k and j
+        k--
+        j--
+    ENDIF
+ENDWHILE

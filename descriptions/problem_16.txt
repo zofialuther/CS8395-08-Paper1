@@ -1,0 +1,2 @@
+
+This program takes an array of integers as a parameter and returns a list of integers. It finds any duplicate numbers in the array and adds them to the list, which is then returned. The program works by looping through the array and assigning a negative value to the current element's index in the array if the element already exists in the array. If this is done, it will mean that the element is a duplicate and will be added to the list of integers which is returned.

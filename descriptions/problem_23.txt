@@ -1,0 +1,3 @@
+
+
+This program takes in an array of integer pairs as a parameter and returns an array of integer pairs. It sorts the given array by the first integer in each pair, and then it merges all overlapping intervals into a single interval. The result is an array of intervals that contain no overlapping intervals.

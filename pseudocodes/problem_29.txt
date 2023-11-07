@@ -1,0 +1,31 @@
+
+
+// Pseudocode: 
+
+// DEFINE numDecodings(s)
+//   IF s is NULL OR s.length = 0 OR s.charAt(0) = '0'
+//     RETURN 0
+//   ENDIF
+
+//   SET n = s.length
+//   CREATE dp array with size n + 1
+//   SET dp[0] = 1
+//   IF s.charAt(0) != '0' 
+//      SET dp[1] = 1
+//   ELSE 
+//      SET dp[1] = 0
+//   ENDIF
+
+//   FOR i = 2 to n
+//      SET first = convert substring(s, i-1, i) to int
+//      SET second = convert substring(s, i-2, i) to int
+//      IF first >= 1 and first <= 9
+//        dp[i] += dp[i-1]
+//      ENDIF 
+//      IF second >= 10 and second <= 26
+//        dp[i] += dp[i-2]
+//      ENDIF
+//   ENDFOR
+
+//   RETURN dp[n] 
+// END DEFINE

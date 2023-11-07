@@ -1,0 +1,32 @@
+
+
+// Pseudocode
+
+FUNCTION maxProduct(nums)
+  // Check if nums is null or empty
+  IF nums is null OR nums is empty
+    RETURN 0
+  
+  // Initialize max, min, and result variables
+  SET max = nums[0]
+  SET min = nums[0]
+  SET result = nums[0]
+  
+  // Loop through nums array
+  FOR i = 1 to nums.length
+    // Store max in temp
+    SET temp = max
+    
+    // Calculate new max
+    SET max = MAX ( MAX (max * nums[i], min * nums[i]), nums[i] )
+    
+    // Calculate new min
+    SET min = MIN ( MIN (temp * nums[i], min * nums[i]), nums[i] )
+    
+    // Check if max is larger than result
+    IF max > result
+      SET result = max
+      
+  // Return result
+  RETURN result
+END FUNCTION

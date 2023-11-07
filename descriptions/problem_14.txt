@@ -1,0 +1,3 @@
+
+
+This program takes a String as a parameter and returns a boolean. It checks to see if every character in the string occurs an equal number of times. It does this by creating a map of characters and their associated counts, and then comparing each count to the initial count to determine if they are all equal. If any character in the string has a different count than the initial count, the program returns false. Otherwise, it returns true.

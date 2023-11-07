@@ -1,0 +1,17 @@
+
+
+START
+
+# DEFINE a function named customSort that takes in one parameter, strs
+  # SET a variable numA to the Integer of the first element in the strs parameter
+  # SET a variable numB to the Integer of the second element in the strs parameter
+  # IF numA is equal to numB
+    # RETURN the comparison of the two elements in the strs parameter
+  # ELSE
+    # RETURN the difference between numA and numB
+  # END IF
+  # SORT the strs parameter
+  # RETURN the strs parameter
+# END FUNCTION
+
+END

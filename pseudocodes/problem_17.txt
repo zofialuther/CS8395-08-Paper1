@@ -1,0 +1,11 @@
+
+
+// Declare a variable 'result' to store the maximum length of Harmonious Subsequence
+// Initialize 'result' to 0
+// Create a map to store the number of times each element appears in the array
+// Iterate through each element of the array
+  // For each element, add its count to the map
+// Iterate through each key in the map
+  // If the map contains a key that is 1 more than the current key
+    // Set 'result' to the maximum of 'result' and the sum of the values of the two keys
+// Return 'result'

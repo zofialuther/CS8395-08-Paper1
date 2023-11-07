@@ -1,0 +1,49 @@
+{
+    "problem_index": 2,
+    "java_code": "public boolean hasUniqueChars(String s) {\n    Set<Character> charSet = new HashSet<>();\n    for (char c : s.toCharArray()) {\n        if (charSet.contains(c)) {\n            return false;\n        }\n        charSet.add(c);\n    }\n    return true;\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": "",
+            "output": true
+        },
+        {
+            "input": "a",
+            "output": true
+        },
+        {
+            "input": "aa",
+            "output": false
+        },
+        {
+            "input": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+            "output": true
+        },
+        {
+            "input": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789a",
+            "output": false
+        },
+        {
+            "input": "!@#$%^&*()_+-=[]{}|;':,.<>?/`~",
+            "output": true
+        },
+        {
+            "input": "!@#$%^&*()_+-=[]{}|;':,.<>?/`~!",
+            "output": false
+        },
+        {
+            "input": "abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output": false
+        }
+    ]
+}

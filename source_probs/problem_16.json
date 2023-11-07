@@ -1,0 +1,25 @@
+{
+    "problem_index": 16,
+    "java_code": "import java.util.List;\\nimport java.util.ArrayList;\\n\\npublic List<Integer> findDuplicates(int[] nums) {\\n    List<Integer> duplicates = new ArrayList<>();\\n    for (int num : nums) {\\n        int index = Math.abs(num) - 1;\\n        if (nums[index] < 0) {\\n            duplicates.add(Math.abs(num));\\n        }\\n        nums[index] = -nums[index];\\n    }\\n    return duplicates;\\n}",
+    "parameters": [
+        {
+            "name": "nums",
+            "type": "int[]"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "List<Integer>"
+        }
+    ],
+    "tests": [
+        {
+            "input": [4, 3, 2, 7, 8, 2, 3, 1],
+            "output": [2, 3]
+        },
+        {
+            "input": [1, 1, 2],
+            "output": [1]
+        }
+    ]
+}

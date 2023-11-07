@@ -1,0 +1,21 @@
+
+
+Pseudocode:
+
+FUNCTION isAnagram(s, t):
+  IF s.length() is not equal to t.length():
+    RETURN false
+  
+  SET counter to a new array of size 26
+  
+  FOR i = 0 to s.length():
+    INCREMENT counter[s.charAt(i) - 'a']
+    DECREMENT counter[t.charAt(i) - 'a']
+  
+  FOR count in counter:
+    IF count is not equal to 0:
+      RETURN false
+  
+  RETURN true
+  
+END FUNCTION

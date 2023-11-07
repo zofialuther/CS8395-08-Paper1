@@ -1,0 +1,46 @@
+
+
+// rotate()
+START
+
+// check if nums is empty
+IF nums is empty
+   RETURN
+END IF
+
+// set k to k % nums.length
+SET k = k % nums.length
+
+// reverse nums from 0 to nums.length - 1
+CALL reverse(nums, 0, nums.length - 1)
+
+// reverse nums from 0 to k - 1
+CALL reverse(nums, 0, k - 1)
+
+// reverse nums from k to nums.length - 1
+CALL reverse(nums, k, nums.length - 1)
+
+END
+
+// reverse()
+START
+
+// loop while start is less than end
+WHILE start < end
+   // set temp to nums[start]
+   SET temp = nums[start]
+
+   // set nums[start] to nums[end]
+   SET nums[start] = nums[end]
+
+   // set nums[end] to temp
+   SET nums[end] = temp
+
+   // increment start
+   INCREMENT start
+
+   // decrement end
+   DECREMENT end
+END WHILE
+
+END

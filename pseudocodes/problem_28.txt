@@ -1,0 +1,19 @@
+
+
+Pseudocode:
+
+Set n to the length of s
+Set ans to 0
+Create a new HashMap called map
+Set end to 0
+Set start to 0
+
+WHILE end is less than n
+  Set alpha to the character at s at index end
+  IF map contains the key alpha
+    Set start to the maximum of map.get(alpha) and start
+  Set ans to the maximum of ans and end - start + 1
+  Set map at the key s.charAt(end) to end + 1
+  Increment end
+
+RETURN ans

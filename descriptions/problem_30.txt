@@ -1,0 +1,3 @@
+
+
+This program checks whether or not a person can reach the last index of an array of integers by only making jumps of the values indicated in the array. It will take an array of integers as a parameter and will return a boolean value. If the last index can be reached, true is returned. Otherwise, false is returned.

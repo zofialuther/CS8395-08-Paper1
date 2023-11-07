@@ -1,0 +1,25 @@
+{
+    "problem_index": 29,
+    "java_code": "public int numDecodings(String s) {\\n    if (s == null || s.length() == 0 || s.charAt(0) == '0') return 0;\\n    int n = s.length();\\n    int[] dp = new int[n + 1];\\n    dp[0] = 1;\\n    dp[1] = s.charAt(0) != '0' ? 1 : 0;\\n    for (int i = 2; i <= n; i++) {\\n        int first = Integer.parseInt(s.substring(i - 1, i));\\n        int second = Integer.parseInt(s.substring(i - 2, i));\\n        if (first >= 1 && first <= 9) {\\n           dp[i] += dp[i - 1];  \\n        }\\n        if (second >= 10 && second <= 26) {\\n            dp[i] += dp[i - 2];\\n        }\\n    }\\n    return dp[n];\\n}",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "int"
+        }
+    ],
+    "tests": [
+        {
+            "input": "12",
+            "output": 2
+        },
+        {
+            "input": "226",
+            "output": 3
+        }
+    ]
+}

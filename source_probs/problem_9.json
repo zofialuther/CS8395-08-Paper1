@@ -1,0 +1,37 @@
+{
+    "problem_index": 9,
+    "java_code": "\\nimport java.util.Stack;\\n\\npublic boolean isValid(String s) {\\n    Stack<Character> stack = new Stack<>();\\n    for (char c : s.toCharArray()) {\\n        if (c == '(' || c == '{' || c == '[') {\\n            stack.push(c);\\n        } else {\\n            if (stack.isEmpty()) return false;\\n            if (c == ')' && stack.peek() != '(') return false;\\n            if (c == '}' && stack.peek() != '{') return false;\\n            if (c == ']' && stack.peek() != '[') return false;\\n            stack.pop();\\n        }\\n    }\\n    return stack.isEmpty();\\n}\\n",
+    "parameters": [
+        {
+            "name": "s",
+            "type": "String"
+        }
+    ],
+    "return_values": [
+        {
+            "type": "boolean"
+        }
+    ],
+    "tests": [
+        {
+            "input": "()",
+            "output": true
+        },
+        {
+            "input": "()[]{}",
+            "output": true
+        },
+        {
+            "input": "(]",
+            "output": false
+        },
+        {
+            "input": "([)]",
+            "output": false
+        },
+        {
+            "input": "{[]}",
+            "output": true
+        }
+    ]
+}
